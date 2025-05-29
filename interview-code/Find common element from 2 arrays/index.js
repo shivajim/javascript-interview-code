@@ -75,3 +75,12 @@ let tt2 = new Date();
 // console.log(tt2.getTime());
 let tm = (tt2.getTime() - tt1.getTime());
 console.log(tm);
+
+// Using Set function
+
+function intersect(a, b) {
+  var setB = new Set(b);
+  return [...new Set(a)].filter(x => setB.has(x));
+}
+
+console.log(intersect(array1, array2));
