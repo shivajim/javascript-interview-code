@@ -1,3 +1,21 @@
+// May 2025
+
+var missingNumber = function(nums) {
+    const n = nums.length;
+    console.log(n);
+    const Tsum = (n * (n + 1)) / 2;
+    console.log(Tsum);
+    const actualSum = nums.reduce((acc, num) => acc + num, 0);
+    console.log(actualSum);
+    return Tsum - actualSum;
+};
+
+const ar = [3,0,5,4,1]
+
+const num = missingNumber();
+
+console.log(num);
+
 // Function to get the missing number
 function getMissingNo(a, n) {
 
@@ -13,16 +31,6 @@ let arr = [11, 12, 13, 15];
 let N = arr.length;
 let miss = getMissingNo(arr, N);
 console.log(miss);
-
-
-
-
-
-
-
-
-
-
 
 
 // // Function to find the missing number
@@ -53,3 +61,7 @@ console.log(miss);
 
 // // Function call
 // findMissing(arr, n);
+
+
+
+
