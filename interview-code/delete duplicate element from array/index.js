@@ -10,7 +10,6 @@ console.log(array);
 
 let ar = [{ a: 1 }, { b: 2 }, { c: 3 }, { a: 1 }];
 
-
 let rr = array.filter((ob, ind, aaa)=> {
     return aaa.indexOf(ob) == ind;
 });
