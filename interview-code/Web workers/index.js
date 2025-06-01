@@ -1,3 +1,5 @@
+
+
 let w;
 
 function startWebWorker() {
@@ -5,7 +7,7 @@ function startWebWorker() {
     if (typeof (Worker) !== 'undefined') {
         
         if (typeof (w) === 'undefined') {
-            w = new Worker(`workers.js`);
+            w = new Worker('./workers.js');
         }
 
         w.onmessage = (event)=> {

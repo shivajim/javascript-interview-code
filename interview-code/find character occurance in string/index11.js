@@ -15,7 +15,7 @@ function returnCountJSON(str) {
     }, json = {});
     
     let max = 0, charArr = [];
-    for(let key in json) {
+    for(let key in result) {
         if(json[key] === max) {
             charArr.push(key);
         }
