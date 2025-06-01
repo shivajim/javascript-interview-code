@@ -43,3 +43,19 @@ const getNames = map(getName);
 
 console.log(getIds(sampleObj));
 console.log(getNames(sampleObj));
+
+
+// Adding numbers to array
+{
+
+  function append (el, obj) {
+    obj.push(el);
+    // return obj;
+    return [...obj, el];
+  }
+
+const array = [1,2];
+const newArray = append(3, array);
+  console.log(newArray);
+  console.log(array);
+}
